@@ -16,10 +16,7 @@ class CustomerController extends Controller
     {
         //Validate and store data
         $validated = $request->safe();
- 
-        $name = $validated['name'];
-        $dui = $validated['dui'];
-        $nit = $validated['nit'];
-        return $name;
+
+        return $validated;
     }
 }
